@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>微博热搜实时更新</title>
+    <style>
+        .data{
+			margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="data">
+        <h1>更新时间：{{time}}</h1>
+    {% for data in data %}
+        {{ data[0] }}、<a href="https://s.weibo.com/{{ data[2] }}">{{ data[1] }}</a>
+        <br>
+    {% endfor %}
+    </div>
+</body>
+</html>
