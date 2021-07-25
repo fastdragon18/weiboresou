@@ -6,4 +6,4 @@ def delect():
     common.execute('truncate table wbresou')
     # 执行sql语句
     db.commit()
-    data = common.close()
+    common.close()
